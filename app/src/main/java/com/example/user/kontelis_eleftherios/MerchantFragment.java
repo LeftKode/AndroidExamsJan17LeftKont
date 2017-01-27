@@ -197,7 +197,8 @@ public class MerchantFragment extends Fragment {
             if(merchants.size() > 0){
                 this.merchantAdapter.clear();
                 //Εδώ θα το εμφάνιζα αλλα δεν πρόλαβα
-               
+               merchantAdapter.setMerchants(merchants);
+
                 //.....
 
             }
