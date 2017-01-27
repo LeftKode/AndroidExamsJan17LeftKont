@@ -78,12 +78,31 @@ public class MerchantFragment extends Fragment {
 
                 final String M_Legal_Name = "legalName";
                 final String M_Category = "merchantCategory";
+                final String M_Category_Name = "name";
                 final String M_Cont_Point = "contactPoint";
+                final String M_Cont_Point_Map_Addr = "mapAddress";
                 final String M_Aggr_Rating = "aggregateRating";
+                final String M_Rat_Value = "ratingValue";
 
                 //.....
                 for(int i=0; i<merchantsArray.length();i++){
                     JSONObject merchantObj = merchantsArray.getJSONObject(i);
+
+                    String legalName = merchantObj.getString(M_Legal_Name);
+                    Log.v(LOG_TAG,legalName);
+
+                    JSONObject merchCategoryObj = merchantObj.getJSONObject(M_Category);
+                    String merchCategoryName = merchCategoryObj.getString(M_Category_Name);
+                    Log.v(LOG_TAG,merchCategoryName);
+
+                    JSONObject merchContactPointObj = merchantObj.getJSONObject(M_Cont_Point);
+                    String merchMapAddress = merchContactPointObj.getString(M_Cont_Point_Map_Addr);
+                    Log.v(LOG_TAG,merchMapAddress);
+
+                    JSONObject merchAggrRatingObj = merchantObj.getJSONObject(M_Aggr_Rating);
+                    String merchRatingVal = merchAggrRatingObj.getString(M_Rat_Value);
+                    Log.v(LOG_TAG,merchRatingVal);
+
 
                 }
 
