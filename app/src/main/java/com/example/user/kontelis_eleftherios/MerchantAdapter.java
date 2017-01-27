@@ -26,6 +26,23 @@ public class MerchantAdapter extends ArrayAdapter<Merchant> {
         this.context = context;
     }
 
+    public ArrayList<Merchant> getMerchants() {
+        return merchants;
+    }
+
+    public void setMerchants(ArrayList<Merchant> merchants) {
+        this.merchants = merchants;
+    }
+
+    @NonNull
+    @Override
+    public Context getContext() {
+        return context;
+    }
+
+    public void setContext(Context context) {
+        this.context = context;
+    }
 
     @NonNull
     @Override

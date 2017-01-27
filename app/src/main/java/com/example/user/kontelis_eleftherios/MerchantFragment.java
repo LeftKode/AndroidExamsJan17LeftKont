@@ -196,7 +196,10 @@ public class MerchantFragment extends Fragment {
         protected void onPostExecute(ArrayList<Merchant> merchants) {
             if(merchants.size() > 0){
                 this.merchantAdapter.clear();
+                //Εδώ θα το εμφάνιζα αλλα δεν πρόλαβα
+               
                 //.....
+
             }
         }
     }
